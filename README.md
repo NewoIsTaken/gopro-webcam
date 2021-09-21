@@ -11,7 +11,8 @@ This runs an install script. Follow the instructions on the screen.
 
 _The script install the `gopro` script to `/usr/local/sbin/gopro` and set an executable flag._
 
-This script is also on the Arch User Repositories (AUR) (here)[https://aur.archlinux.org/packages/gopro-webcam/]. Please check the Arch wiki for more information on how to install from the AUR.
+This script is also on the [Arch User Repositories (AUR)](https://aur.archlinux.org/packages/gopro-webcam/). Please check the Arch wiki for more information on how to install from the AUR.
+
 
 See **Usage** fom here on.
 
@@ -102,7 +103,7 @@ After=network-online.target
 Wants=network-online.target systemd-networkd-wait-online.service
 
 [Service]
-ExecStart=/usr/local/sbin/gopro webcam -p enx -a -n
+ExecStart=/usr/local/sbin/gopro webcam -a -n
 Restart=on-failure
 RestartSec=15s
 

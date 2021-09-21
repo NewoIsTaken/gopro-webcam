@@ -9,6 +9,7 @@ url="https://github.com/NewoIsTaken/gopro-webcam"
 license=("Apache")
 depends=("v4l2loopback-dkms" "ffmpeg")
 optdepends=("vlc: preview support")
+conflicts=("gopro-tools-git")
 install=gopro-webcam.install
 source=("gopro" "gopro_webcam.service" "60-gopro.rules")
 noextract=("gopro" "gopro_webcam.service" "60-gopro.rules")
